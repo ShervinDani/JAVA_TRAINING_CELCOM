@@ -14,5 +14,4 @@ public class Factorial {
 		}
 		System.out.println("The Factorial is : " + fact);
 	}
-
 }
