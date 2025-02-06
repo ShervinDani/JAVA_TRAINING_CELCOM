@@ -11,7 +11,6 @@ public class StaticAndInstanceMethod {
 		System.out.println("This is a Static Method");
 	}
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		StaticAndInstanceMethod obj1 = new StaticAndInstanceMethod();
 		obj1.instanceMethod();
 		StaticAndInstanceMethod.staticMethod();
