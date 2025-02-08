@@ -8,6 +8,7 @@ public class PronicNumber {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the number");
 		int num1 = sc.nextInt();
+		sc.close();
 		if (num1 % 2 != 0) {
 			System.out.println("Non Pronic Number");
 			return;
