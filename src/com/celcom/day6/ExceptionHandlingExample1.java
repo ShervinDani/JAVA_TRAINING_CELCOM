@@ -1,5 +1,7 @@
 package com.celcom.day6;
 
+import java.io.IOException;
+
 public class ExceptionHandlingExample1 {
 
 	public static void main(String[] args) {
@@ -12,6 +14,11 @@ public class ExceptionHandlingExample1 {
 		try
 		{
 			int [] arr = new int[1];
+			throw new IOException();
+		}
+		catch(IOException e)
+		{
+			System.out.println(e);
 		}
 		catch(NegativeArraySizeException e )
 		{
