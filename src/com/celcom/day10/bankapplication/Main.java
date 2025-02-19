@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
+		// To manage accounts
 		Manager accountmanage = new Manager();
 		Scanner sc = new Scanner(System.in);
 		while(true)
@@ -19,8 +20,11 @@ public class Main {
 			switch(mainchoice)
 			{
 			case 1:
+				
+				// For User Login
 				if(accountmanage.verify())
 				{
+					// To manage Transactions
 					TransactionManager tmanage = new TransactionManager();
 					
 					while(flag)
@@ -41,10 +45,10 @@ public class Main {
 							tmanage.moneyTransfer();
 							break;
 						case 3:
-							tmanage.withdraw();
+							tmanage.withDraw();
 							break;
 						case 4:
-							tmanage.viewDetails();
+							accountmanage.viewDetails();
 							break;
 						default:
 							flag = false;

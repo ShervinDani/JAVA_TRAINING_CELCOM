@@ -8,8 +8,9 @@ import java.util.Scanner;
 
 public class TransactionManager {
 	Account account;
-	
 	Scanner sc = new Scanner(System.in);
+	
+	// Deposit Money
 	public void deposit()
 	{
 		
@@ -21,7 +22,9 @@ public class TransactionManager {
 		System.out.println("Total Balance : " + account.getBalance());
 		return;
 	}
-	public void withdraw()
+	
+	// WithDraw Money
+	public void withDraw()
 	{
 		System.out.println("Enter the amount to withdraw: ");
 		long amount = sc.nextLong();
@@ -36,6 +39,8 @@ public class TransactionManager {
 		System.out.println("Total Balance : " + account.getBalance());
 		return;
 	}
+	
+	// Transfer Money to a new Account
 	public void moneyTransfer()
 	{
 		System.out.println("Enter the amount to transfer: ");
@@ -61,11 +66,5 @@ public class TransactionManager {
 		System.out.println("Total Balance : " + account.getBalance());
 		return;
 	}
-	public void viewDetails() 
-	{
-		Account viewAccount = Manager.accounts.get(Manager.accountnumber);
-		System.out.println("Name : " + viewAccount.getName());
-		System.out.print("Account Number : " + Manager.accountnumber);
-		System.out.println("Balance : " + viewAccount.getBalance());
-	}
+	
 }

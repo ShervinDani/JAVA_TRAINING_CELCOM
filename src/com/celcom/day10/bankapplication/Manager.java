@@ -7,6 +7,8 @@ public class Manager {
 	static HashMap<Long, Account> accounts = new HashMap<>();
 	static long accountnumber;
 	Scanner sc = new Scanner(System.in);
+	
+	//For user login
 	public boolean verify()
 	{
 		System.out.println("Enter the Account Number");
@@ -26,6 +28,8 @@ public class Manager {
 		System.out.println("Try again");
 		return false;
 	}
+	
+	// New Account Creation
 	public void addAccount()
 	{
 		System.out.println("Enter Holder Name");
@@ -40,6 +44,8 @@ public class Manager {
 		System.out.println("Account Created");
 		System.out.println("The Account Number is : " + accounts.size());
 	}
+	
+	// Delete an account
 	public void deleteAccount()
 	{
 		System.out.println("Enter Account Number for delete");
@@ -58,5 +64,14 @@ public class Manager {
 			}
 		}
 		System.out.println("Invalid Creditionals");
+	}
+	
+	// To view account
+	public void viewDetails() 
+	{
+		Account viewAccount = Manager.accounts.get(Manager.accountnumber);
+		System.out.println("Name : " + viewAccount.getName());
+		System.out.print("Account Number : " + Manager.accountnumber);
+		System.out.println("Balance : " + viewAccount.getBalance());
 	}
 }

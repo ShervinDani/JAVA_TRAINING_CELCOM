@@ -1,4 +1,4 @@
-package com.celcom.pack1;
+package com.celcom.day7;
 
 public class MyClass1 extends MyAbstractClass{
 	@Override
