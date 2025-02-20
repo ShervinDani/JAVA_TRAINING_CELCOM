@@ -53,7 +53,7 @@ public class TransactionManager {
 			return;
 		}
 		System.out.println("Enter the account number you want to tansfer");
-		double accno = sc.nextDouble();
+		long accno = sc.nextLong();
 		if(!Manager.accounts.containsKey(accno))
 		{
 			System.out.println("Invalid Number");

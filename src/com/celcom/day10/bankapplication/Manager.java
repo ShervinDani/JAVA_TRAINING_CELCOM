@@ -56,7 +56,7 @@ public class Manager {
 		if(accounts.containsKey(account))
 		{
 			Account delaccount = accounts.get(account);
-			if(delaccount.getPassword() == password)
+			if(delaccount.getPassword().equals(password))
 			{
 				accounts.remove(delaccount);
 				System.out.println("Account Removed");
