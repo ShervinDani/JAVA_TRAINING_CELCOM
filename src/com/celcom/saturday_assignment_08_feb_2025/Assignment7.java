@@ -17,7 +17,7 @@ class Account
 		this.branchName = branchName;
 		this.phone = phone;
 		this.accountType = accountType;
-		this.balance=0;
+		this.balance=0.0;
 	}
 	
 }

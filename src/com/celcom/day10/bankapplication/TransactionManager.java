@@ -15,7 +15,7 @@ public class TransactionManager {
 	{
 		
 		System.out.println("Enter the amount to deposit: ");
-		long amount = sc.nextLong();
+		double amount = sc.nextDouble();
 		account = Manager.accounts.get(Manager.accountnumber);
 		System.out.println("Initial Amount is : " + account.getBalance());
 		account.setBalance(account.getBalance()+amount);
@@ -27,7 +27,7 @@ public class TransactionManager {
 	public void withDraw()
 	{
 		System.out.println("Enter the amount to withdraw: ");
-		long amount = sc.nextLong();
+		double amount = sc.nextDouble();
 		account = Manager.accounts.get(Manager.accountnumber);
 		System.out.println("Initial Amount is : " + account.getBalance());
 		if(account.getBalance()<amount)
@@ -44,7 +44,7 @@ public class TransactionManager {
 	public void moneyTransfer()
 	{
 		System.out.println("Enter the amount to transfer: ");
-		long amount = sc.nextLong();
+		double amount = sc.nextDouble();
 		account = Manager.accounts.get(Manager.accountnumber);
 		System.out.println("Initial Amount is : " + account.getBalance());
 		if(account.getBalance()<amount)
@@ -53,7 +53,7 @@ public class TransactionManager {
 			return;
 		}
 		System.out.println("Enter the account number you want to tansfer");
-		long accno = sc.nextLong();
+		double accno = sc.nextDouble();
 		if(!Manager.accounts.containsKey(accno))
 		{
 			System.out.println("Invalid Number");
