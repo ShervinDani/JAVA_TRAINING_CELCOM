@@ -135,6 +135,7 @@ public class Assignment7 {
 				break;
 			case 5:
 				bank.withDraw();
+				break;
 			default:
 				System.out.println("Invalid");
 			}

@@ -12,6 +12,9 @@ public class TicketManager {
 		trains.put("131 KOLLAM", null);
 	}
 	public void bookTicket() {
+		System.out.println("Enter the number and name of the train");
+		String train = sc.nextLine();
+		if()
 		System.out.println("Enter the number of Persons");
 		int noOfPerson = sc.nextInt();
 		Person[] person = new Person[noOfPerson];
